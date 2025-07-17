@@ -45,6 +45,7 @@ export function Sec2() {
                 }}
               >
                 <Card.Img
+                src={categoryItems.image}
                   variant="top"
                   alt="category"
                   style={{

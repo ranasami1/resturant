@@ -116,11 +116,6 @@ export function Menue() {
     return item.ingredients.join(lng === "ar" ? "، " : ", ");
   };
 
-  // Function to get default image
-  const getDefaultImage = (item) => {
-    // You can customize this based on item type or category
-    return "/images/default-food.jpg";
-  };
 
   return (
     <div className="menu">
