@@ -1,0 +1,328 @@
+{
+  "restaurant": {
+    "name": "كشري التحرير",
+    "name_en": "Koshary El Tahrir",
+    "established": "1963",
+    "specialty": "المطبخ المصري - الكشري",
+    "phone": "19719",
+    "working_hours": {
+      "open": "09:00",
+      "close": "24:00"
+    },
+    "delivery": {
+      "available": true,
+      "hours": {
+        "start": "09:00",
+        "end": "02:00"
+      }
+    }
+  },
+  "menu": {
+    "main_dishes": {
+      "koshary_plates": [
+        {
+          "id": "001",
+          "name": "كشري التحرير عادي",
+          "name_en": "Regular Tahrir Koshary",
+          "description": "طبق كشري مكون من أرز وعدس ومكرونة وحمص مع صلصة طماطم وبصل مقلي",
+          "price_egypt": "32 جنيه",
+          "size": "عادي",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://silkroadrecipes.com/koshari/"
+        },
+        {
+          "id": "002",
+          "name": "كينج التحرير",
+          "name_en": "King Tahrir",
+          "description": "طبق كشري حجم صغير مناسب للأطفال وأصحاب الشهية القليلة",
+          "size": "صغير",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+        },
+        {
+          "id": "003",
+          "name": "توب التحرير",
+          "name_en": "Top Tahrir",
+          "description": "طبق كشري حجم متوسط أكبر من كينج التحرير",
+          "size": "متوسط",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://www.taste.com.au/recipes/koshari-egyptian-rice-lentils-pasta-recipe/ygqlkvwa"
+        },
+        {
+          "id": "004",
+          "name": "طبق كشري صغير",
+          "name_en": "Small Koshary Plate",
+          "description": "طبق كشري صغير مكون من مكرونة وبصل مقلي وحمص وعدس وصلصة خاصة",
+          "size": "صغير",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة"],
+          "image": "https://www.themediterraneandish.com/egyptian-koshari-recipe/"
+        },
+        {
+          "id": "005",
+          "name": "طبق كشري متوسط",
+          "name_en": "Medium Koshary Plate",
+          "description": "طبق كشري متوسط مكون من مكرونة وبصل مقلي وحمص وعدس وصلصة خاصة",
+          "size": "متوسط",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة"],
+          "image": "https://www.seriouseats.com/koshari-egyptian-lentils-rice-and-pasta-recipe-8653829"
+        },
+        {
+          "id": "006",
+          "name": "طبق كشري كبير",
+          "name_en": "Large Koshary Plate",
+          "description": "طبق كشري كبير مكون من مكرونة وبصل مقلي وحمص وعدس وصلصة خاصة",
+          "size": "كبير",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة"],
+          "image": "https://www.everylittlecrumb.com/koshari/"
+        }
+      ],
+      "family_plates": [
+        {
+          "id": "007",
+          "name": "طبق عائلي",
+          "name_en": "Family Plate",
+          "description": "طبق كشري عائلي يكفي لعدد خمسة أفراد",
+          "price_egypt": "225 جنيه",
+          "serves": "5 أفراد",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://www.thedeliciouscrescent.com/koshari-egyptian-rice/"
+        },
+        {
+          "id": "008",
+          "name": "طبق ميجا",
+          "name_en": "Mega Plate",
+          "description": "طبق كشري ميجا يكفي لعدد ثلاثة أفراد",
+          "serves": "3 أفراد",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://www.thedeliciouscrescent.com/koshari-egyptian-rice/"
+        }
+      ],
+      "special_koshary": [
+        {
+          "id": "009",
+          "name": "كشري بالنقانق البلدي",
+          "name_en": "Koshary with Local Sausages",
+          "description": "طبق كشري متوسط مع قطع من النقانق البلدي",
+          "size": "متوسط",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة", "نقانق بلدي"],
+          "image": "https://www.hungrypaprikas.com/authentic-koshari/"
+        },
+        {
+          "id": "010",
+          "name": "كشري بالدجاج",
+          "name_en": "Koshary with Chicken",
+          "description": "طبق كشري متوسط مع مكعبات من صدور الدجاج",
+          "size": "متوسط",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة", "صدور دجاج"],
+          "image": "https://www.taste.com.au/recipes/koshari-egyptian-rice-lentils-pasta-recipe/ygqlkvwa"
+        },
+        {
+          "id": "011",
+          "name": "كشري للأطفال",
+          "name_en": "Kids Koshary",
+          "description": "طبق كشري للأطفال مع عصير أطفال",
+          "size": "صغير",
+          "includes": "عصير أطفال",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة"],
+          "image": "https://glow-diaries.com/egyptian-koshari-vegan/"
+        }
+      ]
+    },
+    "sandwiches": [
+      {
+        "id": "012",
+        "name": "حواوشي لحمة صغير",
+        "name_en": "Small Meat Hawawshi",
+        "price_egypt": "15 جنيه",
+        "size": "صغير",
+        "image": "https://www.thedeliciouscrescent.com/koshari-egyptian-rice/"
+      },
+      {
+        "id": "013",
+        "name": "حواوشي لحمة وسط",
+        "name_en": "Medium Meat Hawawshi",
+        "price_egypt": "20 جنيه",
+        "size": "وسط",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "014",
+        "name": "حواوشي لحمة كبير",
+        "name_en": "Large Meat Hawawshi",
+        "price_egypt": "25 جنيه",
+        "size": "كبير",
+        "image": "https://www.themediterraneandish.com/egyptian-koshari-recipe/"
+      },
+      {
+        "id": "015",
+        "name": "حواوشي فراخ صغير",
+        "name_en": "Small Chicken Hawawshi",
+        "price_egypt": "25 جنيه",
+        "size": "صغير",
+        "image": "https://www.everylittlecrumb.com/koshari/"
+      },
+      {
+        "id": "016",
+        "name": "حواوشي فراخ وسط",
+        "name_en": "Medium Chicken Hawawshi",
+        "price_egypt": "30 جنيه",
+        "size": "وسط",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "017",
+        "name": "حواوشي فراخ كبير",
+        "name_en": "Large Chicken Hawawshi",
+        "price_egypt": "35 جنيه",
+        "size": "كبير",
+        "image": "https://www.taste.com.au/recipes/koshari-egyptian-rice-lentils-pasta-recipe/ygqlkvwa"
+      }
+    ],
+    "side_dishes": [
+      {
+        "id": "018",
+        "name": "حمص كريمي",
+        "name_en": "Creamy Hummus",
+        "description": "غموس الحمص ناعم وغني بنكهات جوزية وحمضية",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "019",
+        "name": "طبق عدس",
+        "name_en": "Lentil Dish",
+        "description": "عدس أخضر مسلوق طري وترابي",
+        "image": "https://silkroadrecipes.com/koshari/"
+      },
+      {
+        "id": "020",
+        "name": "سلطة شرقية",
+        "name_en": "Oriental Salad",
+        "description": "براعم الفاصوليا والجزر والخيار وبراعم البازلاء والفلفل الحلو",
+        "ingredients": ["براعم الفاصوليا", "جزر", "خيار", "براعم البازلاء", "فلفل حلو"],
+        "image": "https://www.scalable.com"
+      },
+      {
+        "id": "021",
+        "name": "خبز محمص",
+        "name_en": "Toasted Bread",
+        "description": "خبز محمص ذهبي مقرمش",
+        "image":"https://www.seriouseats.com/koshari-egyptian-lentils-rice-and-pasta-recipe-8653829"
+      }
+    ],
+    "extras_and_additions": [
+      {
+        "id": "022",
+        "name": "إضافة عدس",
+        "name_en": "Extra Lentils",
+        "price_egypt": "7 جنيه",
+        "image": "https://silkroadrecipes.com/koshari/"
+      },
+      {
+        "id": "023",
+        "name": "إضافة حمص",
+        "name_en": "Extra Chickpeas",
+        "price_egypt": "7 جنيه",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "024",
+        "name": "إضافة صلصة",
+        "name_en": "Extra Sauce",
+        "price_egypt": "7 جنيه",
+        "image": "https://www.taste.com.au/recipes/koshari-egyptian-rice-lentils-pasta-recipe/ygqlkvwa"
+      },
+      {
+        "id": "025",
+        "name": "باكت شطة",
+        "name_en": "Hot Sauce Packet",
+        "price_egypt": "2 جنيه",
+        "image": "https://silkroadrecipes.com/koshari/"
+      },
+      {
+        "id": "026",
+        "name": "باكت دقة",
+        "name_en": "Dukka Packet",
+        "price_egypt": "2 جنيه",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "027",
+        "name": "باكت تقلية",
+        "name_en": "Fried Garnish Packet",
+        "price_egypt": "12 جنيه",
+        "image": "https://www.themediterraneandish.com/egyptian-koshari-recipe/"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "034",
+        "name": "أرز باللبن",
+        "name_en": "Rice Pudding",
+        "price_egypt": "25 جنيه",
+        "description": "حلوى كلاسيكية كريمية ومريحة",
+        "image": "https://www.chocolatesandchai.com/egyptian-koshari-koshary-recipe/"
+      },
+      {
+        "id": "037",
+        "name": "مهلبية",
+        "name_en": "Muhallabia",
+        "price_egypt": "25 جنيه",
+        "description": "حلوى عربية تقليدية",
+        "image": "https://www.seriouseats.com/koshari-egyptian-lentils-rice-and-pasta-recipe-8653829"
+      }
+    ],
+    "beverages": [
+      {
+        "id": "039",
+        "name": "مياه معدنية صغيرة",
+        "name_en": "Small Mineral Water",
+        "price_egypt": "8 جنيه",
+        "size": "صغير",
+        "image": "https://silkroadrecipes.com/koshari/"
+      },
+      {
+        "id": "041",
+        "name": "بيبسي عادي",
+        "name_en": "Regular Pepsi",
+        "price_egypt": "25 جنيه",
+        "image": "https://www.taste.com.au/recipes/koshari-egyptian-rice-lentils-pasta-recipe/ygqlkvwa"
+      },
+      {
+        "id": "048",
+        "name": "كركديه",
+        "name_en": "Hibiscus Drink",
+        "description": "مشروب طبيعي منعش",
+        "image": "https://glow-diaries.com/egyptian-koshari-vegan/"
+      }
+    ]
+  },
+  "branches": {
+    "cairo": [
+      {"name":"فرع المعادي","address":"شارع النصر، بجوار مؤمن، المعادي الجديدة","area":"المعادي"},
+      {"name":"فرع عباس العقاد","address":"شارع عباس العقاد","area":"مصر الجديدة"},
+      {"name":"فرع مصر الجديدة","address":"شارع مراد الشريعي، مصر الجديدة","area":"مصر الجديدة"},
+      {"name":"فرع المقطم","address":"شارع المقطم","area":"المقطم"}
+    ],
+    "zagazig": [
+      {"name":"فرع المحطة","address":"ميدان التحرير","phones":["01212333375","01022661477"]},
+      {"name":"فرع المحطة الثاني","address":"المحطة أمام نادي السكة الحديد","phones":["01022661477","01212333375"]},
+      {"name":"فرع الأحرار","address":"طريق الأحرار أمام موقف الأحرار","phones":["01221889935","01276999902"]},
+      {"name":"فرع المحافظة","address":"شارع المحافظة أمام مدرسة الناصرية","phones":["01226999901","01212889909"]}
+    ],
+    "other_locations": [
+      {"country":"السعودية","city":"الرياض","address":"2567 جرير، الملز، الرياض 12836 7101"},
+      {"country":"قطر","city":"الدوحة","areas":["أبو هامور","ميناء الدوحة","بلدية الوكرة"]}
+    ]
+  },
+  "additional_info": {
+    "tax_included": "جميع الأسعار تشمل ضريبة القيمة المضافة 14%",
+    "currency": "جنيه مصري",
+    "establishment_year": "1963",
+    "total_branches": "16 فرع في مصر",
+    "speciality": "الكشري المصري الأصيل",
+    "vegetarian_friendly": true,
+    "customization_available": true,
+    "catering_services": true,
+    "loyalty_program": true
+  }
+}

@@ -1,0 +1,197 @@
+/* footer.css */
+footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1;
+  margin-top: auto;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+footer h5 {
+  color: #f39c12 !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+footer h6 {
+  color: #ecf0f1;
+  font-weight: bold;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+footer a {
+  color: #ecf0f1 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12 !important;
+  transform: scale(1.1);
+}
+
+footer .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+  background-color: #f39c12;
+  color: #2c3e50 !important;
+  transform: translateY(-3px);
+}
+
+footer .phone-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+footer .branch-info {
+  background-color: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 3px solid #f39c12;
+}
+
+footer .branch-info:hover {
+  background-color: rgba(255,255,255,0.1);
+  transition: background-color 0.3s ease;
+}
+
+footer hr {
+  border-color: #7f8c8d !important;
+  opacity: 0.5;
+}
+
+footer .working-hours {
+  background-color: rgba(52, 152, 219, 0.1);
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-left: 3px solid #3498db;
+  margin-bottom: 5px;
+}
+
+footer .delivery-hours {
+  background-color: rgba(46, 204, 113, 0.1);
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-left: 3px solid #2ecc71;
+}
+
+footer .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 5px 0;
+}
+
+footer .contact-item:hover {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 5px;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+footer .contact-item svg {
+  color: #f39c12;
+  margin-right: 10px;
+  width: 16px;
+}
+
+footer .legal-info {
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer .legal-info p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* RTL Support */
+[dir="rtl"] footer .contact-item svg {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+[dir="rtl"] footer .branch-info {
+  border-left: none;
+  border-right: 3px solid #f39c12;
+}
+
+[dir="rtl"] footer .working-hours {
+  border-left: none;
+  border-right: 3px solid #3498db;
+}
+
+[dir="rtl"] footer .delivery-hours {
+  border-left: none;
+  border-right: 3px solid #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  
+  footer .row > div {
+    margin-bottom: 20px;
+  }
+  
+  footer h5 {
+    font-size: 1.1rem;
+  }
+  
+  footer h6 {
+    font-size: 1rem;
+  }
+  
+  footer .social-links a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  footer .contact-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 20px 0 !important;
+  }
+  
+  footer .container {
+    padding: 0 15px;
+  }
+  
+  footer h5 {
+    font-size: 1rem;
+  }
+  
+  footer h6 {
+    font-size: 0.9rem;
+  }
+  
+  footer .branch-info,
+  footer .working-hours,
+  footer .delivery-hours {
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+}
