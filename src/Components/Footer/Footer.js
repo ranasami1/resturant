@@ -199,12 +199,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Legal Info */}
         <div className='row'>
           <div className='col-12 text-center'>
             <hr className='my-3' style={{ borderColor: '#555' }} />
             <p className='mb-1'>{t("Prices include VAT")}</p>
-            <p className='mb-1'>{t("Adults need 2000 calories per day")}</p>
             <p className='small text-muted mb-0'>
               {lng === 'en' 
                 ? `© ${new Date().getFullYear()} ${restaurantData.name_en}. All rights reserved.`
