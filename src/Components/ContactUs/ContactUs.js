@@ -117,7 +117,7 @@ export default function ContactUs() {
   return (
     <div className="contact-us-page">
       <Container className="py-5">
-        {/* Page Header */}
+       
         <Row className="mb-5">
           <Col>
             <div className="page-header text-center">
@@ -131,7 +131,7 @@ export default function ContactUs() {
           </Col>
         </Row>
 
-        {/* Alert */}
+       
         {showAlert && (
           <Row className="mb-4">
             <Col>
@@ -143,7 +143,7 @@ export default function ContactUs() {
         )}
 
         <Row>
-          {/* Contact Form */}
+        
           <Col lg={8} className="mb-4">
             <Card className="contact-form-card h-100">
               <Card.Header className="bg-warning text-dark">
@@ -264,9 +264,9 @@ export default function ContactUs() {
             </Card>
           </Col>
 
-          {/* Contact Information */}
+         
           <Col lg={4}>
-            {/* Quick Contact */}
+         
             <Card className="contact-info-card mb-4">
               <Card.Header className="bg-dark text-light">
                 <h5 className="mb-0">
@@ -316,7 +316,7 @@ export default function ContactUs() {
               </Card.Body>
             </Card>
 
-            {/* Branches */}
+            
             <Card className="branches-card mb-4">
               <Card.Header className="bg-warning text-dark">
                 <h5 className="mb-0">
@@ -325,7 +325,7 @@ export default function ContactUs() {
                 </h5>
               </Card.Header>
               <Card.Body>
-                {/* Cairo Branches */}
+              
                 <div className="branch-section mb-3">
                   <h6 className="branch-city">
                     {t("Cairo")}
@@ -354,7 +354,7 @@ export default function ContactUs() {
                   ))}
                 </div>
 
-                {/* Zagazig Branches */}
+               
                 <div className="branch-section">
                   <h6 className="branch-city">
                     {t("Zagazig")}

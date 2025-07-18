@@ -85,7 +85,7 @@ export default function AboutUs() {
   return (
     <div className="about-us-page">
       <Container className="py-5">
-        {/* Page Header */}
+    
         <Row className="mb-5">
           <Col>
             <div className="page-header text-center">
@@ -100,7 +100,7 @@ export default function AboutUs() {
           </Col>
         </Row>
 
-        {/* Our Story Section */}
+        
         <Row className="mb-5">
           <Col lg={6} className="mb-4">
             <Card className="story-card h-100">
@@ -151,7 +151,7 @@ export default function AboutUs() {
           </Col>
         </Row>
 
-        {/* Statistics Section */}
+       
         <Row className="mb-5">
           <Col>
             <Card className="stats-card">
@@ -185,7 +185,7 @@ export default function AboutUs() {
           </Col>
         </Row>
 
-        {/* Values Section */}
+       
         <Row className="mb-5">
           <Col>
             <h3 className="text-center mb-4">
@@ -213,7 +213,7 @@ export default function AboutUs() {
             </Row>
           </Col>
         </Row>
-        {/* Call to Action */}
+      
         <Row>
           <Col>
             <Card className="cta-card text-center">
