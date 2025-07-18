@@ -1,0 +1,471 @@
+/* AboutUs.css */
+.about-us-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.page-header {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  background: linear-gradient(135deg, #2c3e50 0%, #f39c12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* Story Card */
+.story-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-card h3 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.story-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Mission Card */
+.mission-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card h3 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.mission-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.mission-icon {
+  color: #f39c12;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  min-width: 20px;
+}
+
+.mission-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Statistics Card */
+.stats-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.stats-card h3 {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.stat-item {
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.stat-suffix {
+  font-size: 1.5rem;
+  color: #ffc008;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  margin: 0;
+}
+
+/* Values Cards */
+.value-card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #f39c12 0%, #ffc008 100%);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.value-title {
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.value-desc {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #f39c12 0%, #ffc008 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.timeline-left {
+  left: 0;
+  padding-right: 3rem;
+}
+
+.timeline-right {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.timeline-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(1.02);
+}
+
+.timeline-left .timeline-content::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.timeline-right .timeline-content::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-right: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.timeline-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background: linear-gradient(135deg, #f39c12 0%, #ffc008 100%) !important;
+}
+
+.timeline-title {
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.timeline-desc {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Call to Action Card */
+.cta-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.cta-card h3 {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.cta-card .lead {
+  color: #ecf0f1;
+}
+
+.cta-buttons .btn {
+  margin: 0 10px 10px 0;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-warning {
+  background: linear-gradient(135deg, #f39c12 0%, #ffc008 100%);
+  border: none;
+}
+
+.cta-buttons .btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+}
+
+.cta-buttons .btn-outline-dark {
+  border: 2px solid #ecf0f1;
+  color: #ecf0f1;
+  background: transparent;
+}
+
+.cta-buttons .btn-outline-dark:hover {
+  background: #ecf0f1;
+  color: #2c3e50;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+.tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .mission-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .timeline::before {
+  left: 50%;
+  right: auto;
+}
+
+[dir="rtl"] .timeline-left {
+  left: 50%;
+  right: auto;
+  padding-left: 3rem;
+  padding-right: 0;
+}
+
+[dir="rtl"] .timeline-right {
+  left: 0;
+  right: auto;
+  padding-right: 3rem;
+  padding-left: 0;
+}
+
+[dir="rtl"] .timeline-left .timeline-content::after {
+  left: -15px;
+  right: auto;
+  border-left: none;
+  border-right: 15px solid white;
+}
+
+[dir="rtl"] .timeline-right .timeline-content::after {
+  right: -15px;
+  left: auto;
+  border-right: none;
+  border-left: 15px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-page {
+    padding-top: 1rem;
+  }
+  
+  .page-header {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .story-text {
+    font-size: 1rem;
+  }
+  
+  .stat-icon {
+    font-size: 2.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .value-icon {
+    font-size: 2rem;
+  }
+  
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 70px !important;
+    padding-right: 0 !important;
+  }
+  
+  .timeline-content::after {
+    left: -15px !important;
+    right: auto !important;
+    border-right: 15px solid white !important;
+    border-left: none !important;
+  }
+  
+  .cta-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .story-card .card-body,
+  .mission-card .card-body,
+  .value-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .stat-icon {
+    font-size: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .value-icon {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .cta-card .card-body {
+    padding: 2rem 1rem;
+  }
+}

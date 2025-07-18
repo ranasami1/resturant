@@ -1,15 +1,155 @@
-.Navbar{
+/* Header.css */
+.Navbar {
     position: -webkit-sticky !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 1000;
-    opacity: .9;
+    opacity: .95;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
 }
+
 .custom-link {
     color: #ffc008 !important;
-  }
-  
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.custom-link:hover {
+    color: #2c3e50 !important;
+    background-color: #ffc008;
+    transform: translateY(-2px);
+}
+
+.custom-link:focus {
+    color: #2c3e50 !important;
+    background-color: #ffc008;
+}
+
+.language-btn {
+    background: linear-gradient(135deg, #f39c12 0%, #ffc008 100%) !important;
+    border: none !important;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.language-btn:hover {
+    background: linear-gradient(135deg, #ffc008 0%, #f39c12 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+.language-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.25) !important;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    box-shadow: 0 5px 20px rgba(243, 156, 18, 0.3);
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: 2px solid #ffc008 !important;
+    border-radius: 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 192, 8, 0.25) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffc008' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Mobile Navigation */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(44, 62, 80, 0.95);
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+    
+    .custom-link {
+        display: block;
+        margin: 0.25rem 0;
+        text-align: center;
+    }
+    
+    .language-btn {
+        margin: 1rem auto 0;
+        display: block;
+        width: fit-content;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] .language-btn {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+[dir="rtl"] .custom-link {
+    text-align: right;
+}
+
+/* Animation for active states */
+.navbar-nav .nav-link.active {
+    background-color: #ffc008 !important;
+    color: #2c3e50 !important;
+}
+
+/* Smooth scrolling effect */
+.Navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Logo responsive sizing */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 80px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 70px !important;
+    }
+    
+    .custom-link {
+        font-size: 1rem;
+    }
+}

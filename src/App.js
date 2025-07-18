@@ -6,6 +6,8 @@ import Header from './Components/Header/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './Components/Home/Home';
 import { Menue } from './Components/Menue/Menu';
+import ContactUs from './Components/ContactUs/ContactUs';
+import AboutUs from './Components/AboutUs/AboutUs';
 import { useState, createContext, useEffect } from 'react';
 import axios from 'axios';
 import Footer from './Components/Footer/Footer';
@@ -183,10 +185,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menue />} />
-            {/* Add more routes as needed */}
-            <Route path="/cart" element={<div>Cart Component (To be implemented)</div>} />
-            <Route path="/about" element={<div>About Component (To be implemented)</div>} />
-            <Route path="/contact" element={<div>Contact Component (To be implemented)</div>} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </Router>
 

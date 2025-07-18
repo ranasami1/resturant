@@ -31,19 +31,27 @@ export default function Footer() {
       cairo: [
         {
           name: "فرع المعادي",
+          name_en: "Maadi Branch",
           address: "شارع النصر، بجوار مؤمن، المعادي الجديدة",
-          area: "المعادي"
+          address_en: "Al-Nasr Street, next to Moamen, New Maadi",
+          area: "المعادي",
+          area_en: "Maadi"
         },
         {
-          name: "فرع عباس العقاد", 
+          name: "فرع عباس العقاد",
+          name_en: "Abbas El Akkad Branch", 
           address: "شارع عباس العقاد",
-          area: "مصر الجديدة"
+          address_en: "Abbas El Akkad Street",
+          area: "مصر الجديدة",
+          area_en: "Heliopolis"
         }
       ],
       zagazig: [
         {
           name: "فرع المحطة",
+          name_en: "Central Station Branch",
           address: "ميدان التحرير",
+          address_en: "Tahrir Square",
           phones: ["01212333375", "01022661477"]
         }
       ]
@@ -57,17 +65,13 @@ export default function Footer() {
   const getWorkingHours = () => {
     const open = restaurantData.working_hours.open;
     const close = restaurantData.working_hours.close;
-    return lng === 'en' 
-      ? `${open} - ${close}` 
-      : `${open} - ${close}`;
+    return `${open} - ${close}`;
   };
 
   const getDeliveryHours = () => {
     const start = restaurantData.delivery.hours.start;
     const end = restaurantData.delivery.hours.end;
-    return lng === 'en'
-      ? `Delivery: ${start} - ${end}`
-      : `التوصيل: ${start} - ${end}`;
+    return `${t("Delivery")}: ${start} - ${end}`;
   };
 
   return (
@@ -81,9 +85,7 @@ export default function Footer() {
             </h5>
             <p className='mb-1'>
               <small>
-                {lng === 'en' 
-                  ? `Since ${restaurantData.established}` 
-                  : `منذ ${restaurantData.established}`}
+                {t("Since")} {restaurantData.established}
               </small>
             </p>
             <p className='mb-1'>
@@ -122,34 +124,34 @@ export default function Footer() {
           {/* Branches Section */}
           <div className='col-md-4 mb-3'>
             <h6 style={{ fontWeight: "bold", marginBottom: "15px" }}>
-              {lng === 'en' ? 'Our Branches' : 'فروعنا'}
+              {t("Our Branches")}
             </h6>
             
             {/* Cairo Branches */}
             <div className='mb-2'>
-              <strong>{lng === 'en' ? 'Cairo:' : 'القاهرة:'}</strong>
+              <strong>{t("Cairo")}:</strong>
               {restaurantData.branches.cairo.slice(0, 2).map((branch, index) => (
                 <div key={index} className='small mb-1'>
                   <FontAwesomeIcon icon={faMapMarkerAlt} className='me-1' />
-                  {branch.area}
+                  {lng === 'en' ? branch.area_en || branch.area : branch.area}
                 </div>
               ))}
             </div>
 
             {/* Zagazig Branches */}
             <div>
-              <strong>{lng === 'en' ? 'Zagazig:' : 'الزقازيق:'}</strong>
+              <strong>{t("Zagazig")}:</strong>
               <div className='small mb-1'>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className='me-1' />
-                {lng === 'en' ? 'Al Tahrir Square' : 'ميدان التحرير'}
+                {t("Al Tahrir Square")}
               </div>
             </div>
 
             {/* International Branches */}
             <div className='mt-2'>
               <small>
-                <strong>{lng === 'en' ? 'Also in:' : 'متوفر أيضاً في:'}</strong><br/>
-                {lng === 'en' ? 'Saudi Arabia - Qatar' : 'السعودية - قطر'}
+                <strong>{t("Also in")}:</strong><br/>
+                {t("Saudi Arabia")} - {t("Qatar")}
               </small>
             </div>
           </div>
@@ -204,9 +206,7 @@ export default function Footer() {
             <hr className='my-3' style={{ borderColor: '#555' }} />
             <p className='mb-1'>{t("Prices include VAT")}</p>
             <p className='small text-muted mb-0'>
-              {lng === 'en' 
-                ? `© ${new Date().getFullYear()} ${restaurantData.name_en}. All rights reserved.`
-                : `© ${new Date().getFullYear()} ${restaurantData.name}. جميع الحقوق محفوظة.`}
+              © {new Date().getFullYear()} {getRestaurantName()}. {t("All rights reserved")}.
             </p>
           </div>
         </div>
