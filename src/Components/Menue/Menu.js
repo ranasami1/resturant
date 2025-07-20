@@ -39,16 +39,6 @@ export function Menue() {
     );
   }
 
-  // Get category name
-  const getCategoryName = () => {
-    if (retrievedObject.ar_category_name && retrievedObject.en_category_name) {
-      return lng === "ar"
-        ? retrievedObject.ar_category_name
-        : retrievedObject.en_category_name;
-    }
-    return retrievedObject.categoryDisplayName || "Menu";
-  };
-
   // Get items array
   const getItems = () => {
     if (retrievedObject.items && retrievedObject.items.details) {
@@ -126,7 +116,7 @@ export function Menue() {
           marginBottom: "30px",
         }}
       >
-        {getCategoryName()}
+        {t(retrievedObject.categoryKey)}
       </h1>
 
       <div className="container-fluid d-flex gap-3 align-items-center justify-content-center flex-wrap">

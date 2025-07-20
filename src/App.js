@@ -41,41 +41,6 @@ function App() {
   const [isArabic, setIsArabic] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  // Function to get category display names
-  const getCategoryDisplayName = (categoryKey) => {
-    const categoryNames = {
-      'main_dishes': {
-        ar: 'الأطباق الرئيسية',
-        en: 'Main Dishes'
-      },
-      'sandwiches': {
-        ar: 'السندويتشات',
-        en: 'Sandwiches'
-      },
-      'side_dishes': {
-        ar: 'الأطباق الجانبية',
-        en: 'Side Dishes'
-      },
-      'extras_and_additions': {
-        ar: 'الإضافات والمكملات',
-        en: 'Extras and Additions'
-      },
-      'desserts': {
-        ar: 'الحلويات',
-        en: 'Desserts'
-      },
-      'beverages': {
-        ar: 'المشروبات',
-        en: 'Beverages'
-      }
-    };
-
-    return categoryNames[categoryKey] || {
-      ar: categoryKey.replace(/_/g, ' '),
-      en: categoryKey.replace(/_/g, ' ')
-    };
-  };
-
   function Categories() {
     setLoading(true);
     axios
@@ -84,11 +49,8 @@ function App() {
         // Transform the object of arrays to an array of categories with items
         const menuData = res.data.menu;
         const categoryArray = Object.entries(menuData).map(([key, items]) => {
-          const displayNames = getCategoryDisplayName(key);
           return {
             categoryKey: key, 
-            en_category_name: displayNames.en,
-            ar_category_name: displayNames.ar,
             items: {
               details: items,
             },
@@ -110,7 +72,6 @@ function App() {
     const enhancedCategory = {
       ...selectedCategory,
       categoryDisplayName: selectedCategory.en_category_name,
-      timestamp: new Date().getTime() // Add timestamp for cache management
     };
     
     // Store in localStorage - note this won't work in Claude artifacts but will work in real app
@@ -123,27 +84,6 @@ function App() {
     }
   }
 
-  // Function to get cart items count (for future cart functionality)
-  const getCartItemsCount = () => {
-    try {
-      const cartItems = JSON.parse(localStorage.getItem('cart') || '[]');
-      return cartItems.length;
-    } catch {
-      return 0;
-    }
-  };
-
-  // Function to add item to cart (for future implementation)
-  const addToCart = (item) => {
-    try {
-      const existingCart = JSON.parse(localStorage.getItem('cart') || '[]');
-      const newCart = [...existingCart, { ...item, cartId: Date.now() }];
-      localStorage.setItem('cart', JSON.stringify(newCart));
-      console.log('Item added to cart:', item);
-    } catch (error) {
-      console.warn('Could not add to cart:', error);
-    }
-  };
 
   const lng = Cookies.get('i18next') || 'ar';
 
@@ -170,12 +110,10 @@ function App() {
       menu, 
       setMenu, 
       meal, 
-      Category, 
+      Categories, 
       t, 
       lng,
       loading,
-      addToCart,
-      getCartItemsCount
     }}>
       <div className={`App ${isArabic ? 'arFont' : ''}`}>
         <Header />
