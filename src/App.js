@@ -79,17 +79,16 @@ function App() {
   function Categories() {
     setLoading(true);
     axios
-      .get('/items.json') // Ensure this file is placed in /public/items.json
+      .get('/items.json') 
       .then((res) => {
         // Transform the object of arrays to an array of categories with items
         const menuData = res.data.menu;
         const categoryArray = Object.entries(menuData).map(([key, items]) => {
           const displayNames = getCategoryDisplayName(key);
           return {
-            categoryKey: key, // Keep original key for reference
+            categoryKey: key, 
             en_category_name: displayNames.en,
             ar_category_name: displayNames.ar,
-            categoryDisplayName: displayNames.en, // Default display name
             items: {
               details: items,
             },

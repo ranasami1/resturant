@@ -7,96 +7,88 @@ import { AppContext } from '../../App';
 import { useTranslation } from 'react-i18next';
 
 export function Sec2() {
-  const { meal, Category, lng } = useContext(AppContext);
+  const { meal, Category, lng, loading } = useContext(AppContext);
   const { t } = useTranslation();
 
-  
-  const getCategoryName = (categoryKey) => {
-    const categoryNames = {
-      'main_dishes': { ar: 'الأطباق الرئيسية', en: 'Main Dishes' },
-      'sandwiches': { ar: 'السندويتشات', en: 'Sandwiches' },
-      'side_dishes': { ar: 'الأطباق الجانبية', en: 'Side Dishes' },
-      'extras_and_additions': { ar: 'الإضافات والمكملات', en: 'Extras and Additions' },
-      'desserts': { ar: 'الحلويات', en: 'Desserts' },
-      'beverages': { ar: 'المشروبات', en: 'Beverages' }
-    };
-
-    return categoryNames[categoryKey]?.[lng] || categoryKey.replace(/_/g, ' ');
+  const getCategoryName = (cat) => {
+    return lng === 'ar' ? cat.ar_category_name : cat.en_category_name;
   };
 
+  const getCategoryImage = (itemsObj) => {
+    // ناخد أول صورة موجودة جوه details لأي عنصر
+    const values = Object.values(itemsObj.details || {}).flat();
+    const firstItemWithImage = values.find(item => item[0]);
+    return firstItemWithImage;
+  };
+
+  const getItemsCount = (itemsObj) => {
+    return Object.values(itemsObj.details || {}).flat().length;
+  };
+
+  if (loading) return <Spiner />;
 
   return (
     <div>
       <h2 className="title tracking-in-expand">{t('Categories')}</h2>
       <div className="container-fluid d-flex gap-3 align-items-center justify-content-center flex-wrap">
-        {meal.length > 0 ? (
-          meal.map((category, key) => {
-            const categoryItems = Array.isArray(category.items.details)
-              ? category.items.details
-              : Object.values(category.items.details).flat();
-
-            return (
-              <Card
-                key={key}
+        {meal.map((category, key) => (
+          <Card
+            key={key}
+            style={{
+              width: '18rem',
+              margin: '10px',
+              cursor: 'pointer'
+            }}
+          >
+            <Card.Img
+              src={getCategoryImage(category.items)}
+              variant="top"
+              alt="category"
+              style={{
+                maxHeight: '230px',
+                objectFit: 'cover',
+                height: '200px'
+              }}
+            />
+            <Card.Body>
+              <Card.Title
                 style={{
-                  width: '18rem',
-                  margin: '10px',
-                  cursor: 'pointer'
+                  fontSize: '1.1rem',
+                  fontWeight: 'bold',
+                  marginBottom: '15px',
+                  textAlign: lng === 'ar' ? 'right' : 'left'
                 }}
               >
-                <Card.Img
-                src={categoryItems.image}
-                  variant="top"
-                  alt="category"
-                  style={{
-                    maxHeight: '230px',
-                    objectFit: 'cover',
-                    height: '200px'
-                  }}
-                />
-                <Card.Body>
-                  <Card.Title
+                {getCategoryName(category)}
+              </Card.Title>
+              <Card.Text
+                style={{
+                  fontSize: '0.9rem',
+                  color: '#666',
+                  marginBottom: '15px',
+                  textAlign: lng === 'ar' ? 'right' : 'left'
+                }}
+              >
+                {getItemsCount(category.items)} {lng === 'ar' ? 'عنصر' : 'items'}
+              </Card.Text>
+              <div className="d-flex justify-content-center">
+                <Link to="/menu" style={{ textDecoration: 'none', width: '100%' }}>
+                  <Button
+                    variant="warning"
+                    onClick={() => Category(category)}
                     style={{
-                      fontSize: '1.1rem',
+                      width: '100%',
                       fontWeight: 'bold',
-                      marginBottom: '15px',
-                      textAlign: lng === 'ar' ? 'right' : 'left'
+                      borderRadius: '25px'
                     }}
                   >
-                    {getCategoryName(category.categoryKey)}
-                  </Card.Title>
-                  <Card.Text
-                    style={{
-                      fontSize: '0.9rem',
-                      color: '#666',
-                      marginBottom: '15px',
-                      textAlign: lng === 'ar' ? 'right' : 'left'
-                    }}
-                  >
-                    {categoryItems.length} {lng === 'ar' ? 'عنصر' : 'items'}
-                  </Card.Text>
-                  <div className="d-flex justify-content-center">
-                    <Link to="/menu" style={{ textDecoration: 'none', width: '100%' }}>
-                      <Button
-                        variant="warning"
-                        onClick={() => Category(category)}
-                        style={{
-                          width: '100%',
-                          fontWeight: 'bold',
-                          borderRadius: '25px'
-                        }}
-                      >
-                        {t('View Menu')}
-                      </Button>
-                    </Link>
-                  </div>
-                </Card.Body>
-              </Card>
-            );
-          })
-        ) : (
-          <Spiner />
-        )}
+                    {t('View Menu')}
+                  </Button>
+                </Link>
+              </div>
+            </Card.Body>
+          </Card>
+        ))}
       </div>
     </div>
   );

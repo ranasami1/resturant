@@ -68,9 +68,9 @@ export function Menue() {
   // Function to get item name based on language
   const getItemName = (item) => {
     if (lng === "en") {
-      return item.name_en || item.name || "Unknown Item";
+      return item.name_en || item.name;
     } else {
-      return item.name || item.name_en || "عنصر غير معروف";
+      return item.name || item.name_en;
     }
   };
 
