@@ -1,0 +1,317 @@
+{
+  "restaurant": {
+    "name": "كشري التحرير",
+    "name_en": "Koshary El Tahrir",
+    "established": "1963",
+    "specialty": "المطبخ المصري - الكشري",
+    "phone": "19719",
+    "working_hours": {
+      "open": "09:00",
+      "close": "24:00"
+    },
+    "delivery": {
+      "available": true,
+      "hours": {
+        "start": "09:00",
+        "end": "02:00"
+      }
+    }
+  },
+  "menu": {
+    "main_dishes": {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_ewIyyNy9HiZ7PmWgAqKBcx7S8jP58s_PQ&s",
+      "koshary_plates": [
+        {
+          "id": "001",
+          "name": "كشري التحرير عادي",
+          "name_en": "Regular Tahrir Koshary",
+          "description": "طبق كشري مكون من أرز وعدس ومكرونة وحمص مع صلصة طماطم وبصل مقلي",
+          "price_egypt": "32 جنيه",
+          "size": "عادي",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/18f8f6a0-525c-482b-9150-28750c630f80.jpg"
+        },
+        {
+          "id": "002",
+          "name": "كينج التحرير",
+          "name_en": "King Tahrir",
+          "description": "طبق كشري حجم صغير مناسب للأطفال وأصحاب الشهية القليلة",
+          "size": "صغير",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/542742a073a39a47b031ad21a6ab953e.jpeg?width=1440&quality=75"
+        },
+        {
+          "id": "003",
+          "name": "توب التحرير",
+          "name_en": "Top Tahrir",
+          "description": "طبق كشري حجم متوسط أكبر من كينج التحرير",
+          "size": "متوسط",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://images.deliveryhero.io/image/talabat/Menuitems/%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1637879013168657174.jpg?width=172&amp;height=172"
+        }
+      ],
+      "family_plates": [
+        {
+          "id": "007",
+          "name": "طبق عائلي",
+          "name_en": "Family Plate",
+          "description": "طبق كشري عائلي يكفي لعدد خمسة أفراد",
+          "price_egypt": "225 جنيه",
+          "serves": "5 أفراد",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/ab8c663d-e365-4568-81e2-57a5a247edff.jpg"
+        },
+        {
+          "id": "008",
+          "name": "طبق ميجا",
+          "name_en": "Mega Plate",
+          "description": "طبق كشري ميجا يكفي لعدد ثلاثة أفراد",
+          "serves": "3 أفراد",
+          "ingredients": ["أرز", "عدس", "مكرونة", "حمص", "صلصة طماطم", "بصل مقلي"],
+          "image": "https://images.unsplash.com/photo-1603072802976-f3e8b226dfd6?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "special_koshary": [
+        {
+          "id": "009",
+          "name": "كشري بالنقانق البلدي",
+          "name_en": "Koshary with Local Sausages",
+          "description": "طبق كشري متوسط مع قطع من النقانق البلدي",
+          "size": "متوسط",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة", "نقانق بلدي"],
+          "image": "https://images.unsplash.com/photo-1603072802976-f3e8b226dfd6?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "010",
+          "name": "كشري بالدجاج",
+          "name_en": "Koshary with Chicken",
+          "description": "طبق كشري متوسط مع مكعبات من صدور الدجاج",
+          "size": "متوسط",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة", "صدور دجاج"],
+          "image": "https://images.unsplash.com/photo-1603072802976-f3e8b226dfd6?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "011",
+          "name": "كشري للأطفال",
+          "name_en": "Kids Koshary",
+          "description": "طبق كشري للأطفال مع عصير أطفال",
+          "size": "صغير",
+          "includes": "عصير أطفال",
+          "ingredients": ["مكرونة", "بصل مقلي", "حمص", "عدس", "صلصة خاصة"],
+          "image": "https://images.unsplash.com/photo-1603072802976-f3e8b226dfd6?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    "sandwiches": {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBkXVBputAy2XgsM-0NeM3Ws4xP82dEI5YHA&s",
+      "sandwiches": [
+        {
+          "id": "012",
+          "name": "حواوشي لحمة صغير",
+          "name_en": "Small Meat Hawawshi",
+          "price_egypt": "15 جنيه",
+          "size": "صغير",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "013",
+          "name": "حواوشي لحمة وسط",
+          "name_en": "Medium Meat Hawawshi",
+          "price_egypt": "20 جنيه",
+          "size": "وسط",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "014",
+          "name": "حواوشي لحمة كبير",
+          "name_en": "Large Meat Hawawshi",
+          "price_egypt": "25 جنيه",
+          "size": "كبير",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "015",
+          "name": "حواوشي فراخ صغير",
+          "name_en": "Small Chicken Hawawshi",
+          "price_egypt": "25 جنيه",
+          "size": "صغير",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "016",
+          "name": "حواوشي فراخ وسط",
+          "name_en": "Medium Chicken Hawawshi",
+          "price_egypt": "30 جنيه",
+          "size": "وسط",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "017",
+          "name": "حواوشي فراخ كبير",
+          "name_en": "Large Chicken Hawawshi",
+          "price_egypt": "35 جنيه",
+          "size": "كبير",
+          "image": "https://images.unsplash.com/photo-1559628231-0c6fb912b4ad?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    "side_dishes": {
+      "image": "https://i.ytimg.com/vi/bftXD57EXwo/sddefault.jpg",
+      "side_dishes": [
+        {
+          "id": "018",
+          "name": "حمص كريمي",
+          "name_en": "Creamy Hummus",
+          "description": "غموس الحمص ناعم وغني بنكهات جوزية وحمضية",
+          "image": "https://images.unsplash.com/photo-1589460684660-0136e56aa2ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "019",
+          "name": "طبق عدس",
+          "name_en": "Lentil Dish",
+          "description": "عدس أخضر مسلوق طري وترابي",
+          "image": "https://images.unsplash.com/photo-1589460684660-0136e56aa2ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "020",
+          "name": "سلطة شرقية",
+          "name_en": "Oriental Salad",
+          "description": "براعم الفاصوليا والجزر والخيار وبراعم البازلاء والفلفل الحلو",
+          "ingredients": ["براعم الفاصوليا", "جزر", "خيار", "براعم البازلاء", "فلفل حلو"],
+          "image": "https://images.unsplash.com/photo-1589460684660-0136e56aa2ad?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "021",
+          "name": "خبز محمص",
+          "name_en": "Toasted Bread",
+          "description": "خبز محمص ذهبي مقرمش",
+          "image": "https://images.unsplash.com/photo-1589460684660-0136e56aa2ad?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    "extras_and_additions": {
+      "image": "https://www.arabianrecipe.com/wp-content/uploads/2021/08/239741444_1374088636340583_7438901684077382766_n.jpg",
+      "extras_and_additions": [
+        {
+          "id": "022",
+          "name": "إضافة عدس",
+          "name_en": "Extra Lentils",
+          "price_egypt": "7 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "023",
+          "name": "إضافة حمص",
+          "name_en": "Extra Chickpeas",
+          "price_egypt": "7 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "024",
+          "name": "إضافة صلصة",
+          "name_en": "Extra Sauce",
+          "price_egypt": "7 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "025",
+          "name": "باكت شطة",
+          "name_en": "Hot Sauce Packet",
+          "price_egypt": "2 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "026",
+          "name": "باكت دقة",
+          "name_en": "Dukka Packet",
+          "price_egypt": "2 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "027",
+          "name": "باكت تقلية",
+          "name_en": "Fried Garnish Packet",
+          "price_egypt": "12 جنيه",
+          "image": "https://images.unsplash.com/photo-1594007656551-0cb1c19b1524?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    "desserts": {
+      "image": "https://media.gemini.media/img/large/2023/9/10/2023_9_10_19_2_42_367.jpg",
+      "desserts": [
+        {
+          "id": "034",
+          "name": "أرز باللبن",
+          "name_en": "Rice Pudding",
+          "price_egypt": "25 جنيه",
+          "description": "حلوى كلاسيكية كريمية ومريحة",
+          "image": "https://images.unsplash.com/photo-1584270354949-5ff14d24fb2c?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "037",
+          "name": "مهلبية",
+          "name_en": "Muhallabia",
+          "price_egypt": "25 جنيه",
+          "description": "حلوى عربية تقليدية",
+          "image": "https://images.unsplash.com/photo-1584270354949-5ff14d24fb2c?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    },
+    "beverages": {
+      "image": "https://vid.alarabiya.net/images/2022/04/04/d0b52038-c6a2-4594-9c84-29881234b10d/d0b52038-c6a2-4594-9c84-29881234b10d_16x9_1200x676.jpeg",
+      "beverages": [
+        {
+          "id": "039",
+          "name": "مياه معدنية صغيرة",
+          "name_en": "Small Mineral Water",
+          "price_egypt": "8 جنيه",
+          "size": "صغير",
+          "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "041",
+          "name": "بيبسي عادي",
+          "name_en": "Regular Pepsi",
+          "price_egypt": "25 جنيه",
+          "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "id": "048",
+          "name": "كركديه",
+          "name_en": "Hibiscus Drink",
+          "description": "مشروب طبيعي منعش",
+          "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=80"
+        }
+      ]
+    }
+  },
+  "branches": {
+    "cairo": [
+      {"name":"فرع المعادي","address":"شارع النصر، بجوار مؤمن، المعادي الجديدة","area":"المعادي"},
+      {"name":"فرع عباس العقاد","address":"شارع عباس العقاد","area":"مصر الجديدة"},
+      {"name":"فرع مصر الجديدة","address":"شارع مراد الشريعي، مصر الجديدة","area":"مصر الجديدة"},
+      {"name":"فرع المقطم","address":"شارع المقطم","area":"المقطم"}
+    ],
+    "zagazig": [
+      {"name":"فرع المحطة","address":"ميدان التحرير","phones":["01212333375","01022661477"]},
+      {"name":"فرع المحطة الثاني","address":"المحطة أمام نادي السكة الحديد","phones":["01022661477","01212333375"]},
+      {"name":"فرع الأحرار","address":"طريق الأحرار أمام موقف الأحرار","phones":["01221889935","01276999902"]},
+      {"name":"فرع المحافظة","address":"شارع المحافظة أمام مدرسة الناصرية","phones":["01226999901","01212889909"]}
+    ],
+    "other_locations": [
+      {"country":"السعودية","city":"الرياض","address":"2567 جرير، الملز، الرياض 12836 7101"},
+      {"country":"قطر","city":"الدوحة","areas":["أبو هامور","ميناء الدوحة","بلدية الوكرة"]}
+    ]
+  },
+  "additional_info": {
+    "tax_included": "جميع الأسعار تشمل ضريبة القيمة المضافة 14%",
+    "currency": "جنيه مصري",
+    "establishment_year": "1963",
+    "total_branches": "16 فرع في مصر",
+    "speciality": "الكشري المصري الأصيل",
+    "vegetarian_friendly": true,
+    "customization_available": true,
+    "catering_services": true,
+    "loyalty_program": true
+  }
+}
