@@ -7,7 +7,7 @@ import { AppContext } from "../../App";
 import { useTranslation } from "react-i18next";
 
 export function Sec2() {
-  const { meal, Category, lng, loading } = useContext(AppContext);
+  const { meal, lng, loading,Category } = useContext(AppContext);
   const { t } = useTranslation();
 
   const getCategoryImage = (itemsObj) => {
@@ -84,7 +84,7 @@ export function Sec2() {
                   textAlign: lng === "ar" ? "right" : "left",
                 }}
               >
-                 {getCategoryName(category.categoryKey, lng)}
+                {getCategoryName(category.categoryKey, lng)}
               </Card.Title>
               <Card.Text
                 style={{
@@ -104,6 +104,7 @@ export function Sec2() {
                 >
                   <Button
                     variant="warning"
+                    onClick={()=>Category(category)}
                     style={{
                       width: "100%",
                       fontWeight: "bold",
